@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ArtMarket</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="fragment_zhivop_i_graphica">Это фрагмент "Живопись и графика"</string>
+    <string name="fragment_main_text">Это Главная страница</string>
+    <string name="hobbi_fragment_text">Это фрагмент "Все для хобби"</string>
+    <string name="child_creativity_fragment_text">Это фрагмент "Детское творчество"</string>
+    <string name="creativity_set_fragment_text">Это фрагмент "Наборы для творчества"</string>
+    <string name="Frame_fragment_text">Это фрагмент "Рамы и багеты"</string>
+    <string name="sculpture_fragment_text">Это фрагмент "Скульптура и резьба"</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="artSize">
+        <item>Не выбрано</item>
+        <item>15х20</item>
+        <item>30х40</item>
+        <item>40х60</item>
+        <item>60х80</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--<name name="hello_blank_fragment">Hello blank fragment</name>-->
+</resources>

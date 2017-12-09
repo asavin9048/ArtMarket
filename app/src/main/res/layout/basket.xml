@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/basket_footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/side_nav_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_summa_zakaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/basket_footer"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Сумма заказа:"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/basket_button_buy"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/basket_footer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/basket_footer"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Купить"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView_EmptyBasket"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:text="Тут появятся товары, которые вы добавите в корзину"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_marginBottom="61dp"
+        android:layout_above="@+id/basket_footer"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewGRN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_summa_zakaza"
+        android:layout_alignLeft="@+id/textView_summa_zakaza"
+        android:layout_alignRight="@+id/textView_summa_zakaza"
+        android:layout_alignStart="@+id/textView_summa_zakaza"
+        android:layout_below="@+id/textView_summa_zakaza"
+        android:text="0 грн."
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/basket_in_basket"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/basket_ras"
+        android:layout_above="@+id/textView_EmptyBasket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+</RelativeLayout>

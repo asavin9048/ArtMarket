@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_homie"
+            android:title="Главная" />
+    </group>
+
+
+    <item android:title="Категории товаров">
+        <menu>
+            <item
+                android:id="@+id/nav_zhivop_graphica"
+                android:icon="@drawable/ic_palitra"
+                android:title="Живопись и графика" />
+            <item
+                android:id="@+id/nav_hobbi"
+                android:icon="@drawable/ic_pazzl"
+                android:title="Все для хобби" />
+            <item
+                android:id="@+id/nav_child_creativity"
+                android:icon="@drawable/ic_child"
+                android:title="Детское творчество" />
+
+            <item
+                android:id="@+id/nav_frame"
+                android:icon="@drawable/ic_rama"
+                android:title="Рамы и багеты" />
+            <item
+                android:id="@+id/nav_sculpture"
+                android:icon="@drawable/ic_sculp"
+                android:title="Скульптура и резьба" />
+        </menu>
+    </item>
+
+</menu>

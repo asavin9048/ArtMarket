@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:scrollIndicators="top|bottom"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/itemBasket"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="8dp"-->
+        <!--app:cardElevation="1dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_itemBasket2"-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="90dp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/art_in_basket" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/author"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/artname"-->
+                <!--android:layout_toEndOf="@+id/img_itemBasket2"-->
+                <!--android:layout_toRightOf="@+id/img_itemBasket2"-->
+                <!--android:maxLines="3"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="Алекс Ганель"-->
+                <!--android:textColor="#222"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/artname"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_toRightOf="@+id/img_itemBasket2"-->
+                <!--android:maxLines="3"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="Сосновый бор"-->
+                <!--android:textColor="#222"-->
+                <!--android:textSize="22dp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_below="@+id/artname"-->
+                <!--android:layout_marginTop="22dp"-->
+                <!--android:maxLines="3"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="3200 грн."-->
+                <!--android:textColor="@android:color/holo_red_dark"-->
+                <!--android:textSize="16sp" />-->
+
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/itemBasket2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="8dp"-->
+        <!--app:cardElevation="1dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_itemBasket"-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="90dp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/art_in_basket2" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/author2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/artname2"-->
+                <!--android:layout_toEndOf="@+id/img_itemBasket"-->
+                <!--android:layout_toRightOf="@+id/img_itemBasket"-->
+                <!--android:maxLines="3"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="Алекс Ганель"-->
+                <!--android:textColor="#222"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/artname2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_toRightOf="@+id/img_itemBasket"-->
+                <!--android:maxLines="3"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="Игра лучей"-->
+                <!--android:textColor="#222"-->
+                <!--android:textSize="22dp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_below="@+id/artname2"-->
+                <!--android:layout_marginTop="22dp"-->
+                <!--android:maxLines="3"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="2800 грн."-->
+                <!--android:textColor="@android:color/holo_red_dark"-->
+                <!--android:textSize="16sp" />-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/basket_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/basketfull_footer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/side_nav_bar"
+            android:gravity="bottom">
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/basket_button_buy"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/basketfull_footer"
+
+
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/basketfull_footer"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Купить"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_summa_zakaza2"
+            android:layout_alignLeft="@+id/textView_summa_zakaza2"
+            android:layout_alignRight="@+id/textView_summa_zakaza2"
+            android:layout_alignStart="@+id/textView_summa_zakaza2"
+            android:layout_below="@+id/textView_summa_zakaza2"
+            android:text="6000 грн."
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_summa_zakaza2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/basket_button_buy"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Cумма заказа:"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

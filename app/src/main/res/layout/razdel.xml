@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Масляные краски"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewRazmer"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Бренд"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/textViewMaterial"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Объем/вес"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Цена"
+                android:textColor="@color/cardview_dark_background" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spinnerArtSize"
+                android:layout_width="123dp"
+                android:layout_height="25dp" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/art1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp">
+
+                    <ImageView
+                        android:id="@+id/imgArt1"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maslo1"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/size1"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_above="@+id/price1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imgArt1"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="Набор масляных красок Сонет 12х10мл"
+                        android:textColor="#222"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="right"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="207,14 грн"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/art2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp">
+
+                    <ImageView
+                        android:id="@+id/imgArt2"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maslo2" />
+
+                    <TextView
+                        android:id="@+id/size2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/price2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imgArt2"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="Набор масляных красок Мастер-класс 12х18мл"
+                        android:textColor="#222"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="right"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="827,26 грн."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/art3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="175dp">
+
+                    <ImageView
+                        android:id="@+id/imgArt3"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maslo3" />
+
+                    <TextView
+                        android:id="@+id/size3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/price3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imgArt3"
+                        android:gravity="left"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="Подарочный набор масляных красок МК 12х18мл"
+                        android:textColor="#222"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="right"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="965 грн."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/art4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp">
+
+                    <ImageView
+                        android:id="@+id/imgArt4"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maslo4" />
+
+                    <TextView
+                        android:id="@+id/size4"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/price4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imgArt4"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="Набор масляных красок Ладога 12х18мл"
+                        android:textColor="#222"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="right"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="502 грн."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/art5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp">
+
+                    <ImageView
+                        android:id="@+id/imgArt5"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maslo5" />
+
+                    <TextView
+                        android:id="@+id/size5"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/price5"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imgArt5"
+                        android:gravity="left"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="Набор масляных красок Ладога 8х18мл"
+                        android:textColor="#222"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="right"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="965 грн."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/art6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="165dp">
+
+                    <ImageView
+                        android:id="@+id/imgArt6"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maslo6" />
+
+                    <TextView
+                        android:id="@+id/size6"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/price6"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imgArt6"
+                        android:gravity="left"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="Набор масляных красок Мастер-класс 6х46мл"
+                        android:textColor="#222"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="right"
+                        android:maxLines="3"
+                        android:padding="8dp"
+                        android:text="360 грн."
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>
